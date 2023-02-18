@@ -37,15 +37,13 @@
             </li>
             <li class="header-list-item">
               <a
-                class="header-list-link header-link link header-active-link"
+                class="header-list-link link header-active-link"
                 href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
             <li class="header-list-item">
-              <a
-                href="#"
-                class="header-list-link header-link link header-active-link"
+              <a href="#" class="header-list-link link header-active-link"
                 >Contacts</a
               >
             </li>
@@ -53,12 +51,12 @@
         </nav>
         <div class="header-contacts">
           <a
-            class="header-mail-link header-link link header-active-link"
+            class="header-mail-link link header-active-link"
             href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
           <a
-            class="header-tel-link header-link link header-active-link"
+            class="header-tel-link link header-active-link"
             href="tel:+10001111111"
             >+11 (000) 111-11-11</a
           >
@@ -70,7 +68,7 @@
         <div class="container">
           <div class="hero-description">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button class="hero-button button" type="button">
+            <button data-modal-open class="hero-button button" type="button">
               Order Service
             </button>
           </div>
@@ -93,7 +91,7 @@
               </p>
             </li>
             <li class="advantage-list-item">
-               <div class="advantage-svg">
+              <div class="advantage-svg">
                 <svg class="advantage-icon" width="64" height="64">
                   <use href="./img/icons.svg#icon-clock"></use>
                 </svg>
@@ -105,7 +103,7 @@
               </p>
             </li>
             <li class="advantage-list-item">
-               <div class="advantage-svg">
+              <div class="advantage-svg">
                 <svg class="advantage-icon" width="64" height="64">
                   <use href="./img/icons.svg#icon-diagram"></use>
                 </svg>
@@ -117,7 +115,7 @@
               </p>
             </li>
             <li class="advantage-list-item">
-               <div class="advantage-svg">
+              <div class="advantage-svg">
                 <svg class="advantage-icon" width="64" height="64">
                   <use href="./img/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -323,7 +321,8 @@
         </div>
       </section>
       <section class="costumers">
-        <div class="container"><h2 class="costumers-title">Costumers</h2>
+        <div class="container">
+          <h2 class="costumers-title">Costumers</h2>
           <ul class="costumers-list list">
             <li class="costumers-list-item">
               <a href="#" class="costumers-link link">
@@ -367,7 +366,8 @@
                 </svg>
               </a>
             </li>
-          </ul></div>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -416,5 +416,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close type="button">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="/img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
