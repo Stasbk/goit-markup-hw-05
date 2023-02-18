@@ -283,6 +283,7 @@ body {
   cursor: pointer;
   line-height: 1.5;
   padding: 12px 24px;
+  border-color: transparent;
 }
 
 .gallery-link:hover .product-text {
