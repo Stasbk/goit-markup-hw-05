@@ -117,7 +117,7 @@ body {
 .header-active-link:hover,
 .header-active-link:focus {
   color: var(--darkblue-color);
-  transition: transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 
 .header-list-link {
@@ -196,7 +196,7 @@ body {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--darkblue-color);
-  transition: transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 
 .hero-title {
@@ -252,6 +252,23 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: auto;
+  transition: color 250ms var(--timing-function),background-color 250ms var(--timing-function);
+}
+
+.modal-close-icon {
+margin: auto;
+display: block;
+justify-content: center;
+}
+
+.modal-close:is(:hover, :focus) {
+  border-color: var(--darkblue-color);
+  background-color: var(--darkblue-color);
+}
+
+.modal-close:is(:hover, :focus) .modal-close-icon{
+  transition: transform 250ms var(--timing-function);
+  fill: var(--white-color);
 }
 
 /* Gallery styles */
@@ -326,7 +343,7 @@ body {
 .advantage-list-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 .gallery-list-description {
   padding: 32px 0;
@@ -350,7 +367,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  transition: transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 
 .gallery-list-title {
@@ -464,7 +481,7 @@ body {
 .team-list .social-link:hover,
 .team-list .social-link:focus {
   background-color: var(--darkblue-color);
-  transition: transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 
 .team-list .social-item:last-child {
@@ -576,7 +593,7 @@ body {
 .costumers-link:focus {
   border: 1px solid var(--darkblue-color);
   border-radius: 4px;
-  transition: transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 
 .costumers-list .costumers-icon {
@@ -585,7 +602,7 @@ body {
 
 .costumers-link:is(:hover, :focus) .costumers-icon {
   fill: var(--darkblue-color);
-  transition: transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 
 .costumers-list .costumers-list-item:last-child {
@@ -674,10 +691,11 @@ body {
 
 .footer-social-list .footer-social-icon {
   fill: var(--main-color);
+  transition: color 250ms var(--timing-function);
 }
 
 .footer-social-list .footer-social-link:hover,
 .footer-social-list .footer-social-link:focus {
   background-color: #31d0aa;
-  transition: transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
